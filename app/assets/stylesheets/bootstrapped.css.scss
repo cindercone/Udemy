@@ -31,13 +31,20 @@ $font-size-small: ceil(($font-size-base * 0.85));
 	float: right;
 }
 
+.navbar-default .navbar-nav > li > a.btn-primary:hover {
+	background-color: #286090;
+}
+
+.navbar-default .navbar-nav > li > a.btn-success:hover {
+	background-color: #449d44;
+}
+
 .navbar-default .navbar-nav > li > a.navbar-btn {
 	color: #fff;
 	padding: 7px 15px;
 
 	&:hover {
 		color: #fff;
-		background-color: #286090;
 	}
 }
 
