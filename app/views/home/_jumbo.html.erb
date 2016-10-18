@@ -1,6 +1,6 @@
 <div class="jumbotron center">
-	<h1>Welcome to my App!</h1>
-	<p>Find me in app/views/home/index.html.erb</p>
+	<h1>Welcome!</h1>
+	<p>Here are some of my favorite TV Shows and Movies - Feel Free to <strong><%= link_to 'Sign-Up', new_user_registration_path %></strong> and add some of yours!</p>
 
 	<% if user_signed_in? %>
       	<%= link_to 'Edit Profile', edit_user_registration_path, class: 'btn btn-primary' %>

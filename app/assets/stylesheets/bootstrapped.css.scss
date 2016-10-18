@@ -12,6 +12,15 @@ $gray: lighten($gray-base, 33.5%);
 $gray-light: lighten($gray-base, 46.7%);
 $gray-lighter: lighten($gray-base, 63.5%);
 
+.navbar-default .navbar-nav > li > a.navbar-btn {
+	color: #fff;
+	padding: 7px 15px;
+
+	&:hover {
+		color: #fff;
+		background-color: #286090;
+	}
+}
 
 
 @import "bootstrap-sprockets";
