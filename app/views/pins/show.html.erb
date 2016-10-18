@@ -7,8 +7,9 @@
 				<%= image_tag @pin.image.url(:medium) %>
 			</div>
 			<div class="panel-body">
-				<%= @pin.description %><br />
-				<%= @pin.user.name if @pin.user %><br />
+				<strong><%= @pin.description %></strong><br />
+				By: <%= @pin.user.name if @pin.user %><br />
+				Date Created: <em><%= @pin.created_at.strftime("%b %d %Y") %></em><br />
 				<% if @pin.user == current_user %>
 					<%= link_to 'Edit', edit_pin_path(@pin) %> |
 				<% end %>

@@ -12,6 +12,25 @@ $gray: lighten($gray-base, 33.5%);
 $gray-light: lighten($gray-base, 46.7%);
 $gray-lighter: lighten($gray-base, 63.5%);
 
+$font-size-base: 14px;
+$font-size-small: ceil(($font-size-base * 0.85));
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.center {
+	text-align: center;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
 .navbar-default .navbar-nav > li > a.navbar-btn {
 	color: #fff;
 	padding: 7px 15px;
@@ -22,10 +41,10 @@ $gray-lighter: lighten($gray-base, 63.5%);
 	}
 }
 
+.panel-footer {
+	min-height: 40px;
+}
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
-.center {
-	text-align: center;
+.small {
+	font-size: font-size-small;
 }

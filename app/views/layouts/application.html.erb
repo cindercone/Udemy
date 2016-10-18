@@ -11,7 +11,7 @@
 
 <%= render 'home/header' %>
 
-<div class="container">
+<div id="main" class="container">
 
 <% flash.each do |name, msg| %>
 	<%= content_tag(:div, msg, class: "alert alert-info") %>
@@ -19,7 +19,10 @@
 	
 
 	<%= yield %>
+
 </div>
+
+<%= render 'home/footer' %>
 
 </body>
 </html>
