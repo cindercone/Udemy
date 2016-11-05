@@ -18,6 +18,7 @@ gem 'masonry-rails', '~> 0.2.4'
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 gem 'foundicons-rails', '~> 0.2.0'
+gem 'foundation-icons-sass-rails'
 
 group :development, :test do
   gem 'byebug'
