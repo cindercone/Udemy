@@ -10,15 +10,16 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+
+ *= require 'foundicons_social'
+ *= require 'foundicons'
  *= require 'masonry/transitions'
  *= require_tree .
  *= require_self
  */
 
-html,body { 
-    height: 100%;
-    min-height: 100vh !important;
-}
+@import 'foundation-icons';
+
 
 header .navbar {
 	position: fixed;
@@ -29,4 +30,23 @@ header .navbar {
 div#main {
 	min-height: 100%;
 	padding-top: 75px;
+}
+
+div.social {
+
+  ul li {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 10px;
+  }
+
+  ul li i {
+    font-size: 2.4rem;
+    transition: font-size 0.5s ease;
+  }
+
+  ul li i:hover {
+    font-size: 4.2rem;
+  }
+
 }

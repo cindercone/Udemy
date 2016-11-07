@@ -74,6 +74,9 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
+    foundation-icons-sass-rails (3.0.0)
+      railties (>= 3.1.1)
+      sass-rails (>= 3.1.1)
     foundicons-rails (0.2.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
@@ -113,6 +116,7 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
+    parallax-rails (1.0.0)
     pg (0.17.1)
     pkg-config (1.1.7)
     rack (1.6.4)
@@ -201,12 +205,14 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise (~> 4.2)
+  foundation-icons-sass-rails
   foundicons-rails (~> 0.2.0)
   jbuilder (~> 2.0)
   jquery-rails
   jquery-turbolinks
   masonry-rails (~> 0.2.4)
   paperclip (~> 5.1)
+  parallax-rails (~> 1.0)
   pg (= 0.17.1)
   rails (= 4.2.5)
   rails_12factor (= 0.0.2)
