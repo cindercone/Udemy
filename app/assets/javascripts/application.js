@@ -11,8 +11,7 @@
 // about supported directives.
 //
 
-//= require parallax
-//= require jquery.parallax
+
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
@@ -22,4 +21,8 @@
 //= require bootstrap
 //= require angular
 //= require leaflet
+//= stub parallax
+//= stub jquery.parallax
 //= require_tree .
+
+

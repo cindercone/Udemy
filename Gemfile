@@ -11,6 +11,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap'
   gem 'rails-assets-angular'
   gem 'rails-assets-leaflet'
+  gem 'rails-assets-parallax'
 end
 
 gem 'jquery-rails'
@@ -28,6 +29,7 @@ gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 gem 'foundicons-rails', '~> 0.2.0'
 gem 'foundation-icons-sass-rails'
 gem 'parallax-rails', '~> 1.0'
+gem 'sprockets', '~> 3.5', '>= 3.5.2'
 
 group :development, :test do
   gem 'byebug'
