@@ -1,14 +1,16 @@
- <footer class="container">
-	 	<div class="panel-footer">
+ <footer class="footer">
+ 	<div class="container">
+ 		<p class="text-muted">
 	 		<span class="left">
 	 			Copyright &copy; <%= Time.now.year %> This App!
 	 		</span>
 
 	 		<span class="right">
 	 			<%= link_to 'Home', root_path %>
-	 			<% if user_signed_in? %>  | 
+	 			<% if user_signed_in? %>  |
 					<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
 				<% end %>
 	 		</span>
+ 		</p>
  	</div>
 </footer>

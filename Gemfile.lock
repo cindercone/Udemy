@@ -116,6 +116,7 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
+    parallax-rails (1.0.0)
     pg (0.17.1)
     pkg-config (1.1.7)
     rack (1.6.4)
@@ -211,6 +212,7 @@ DEPENDENCIES
   jquery-turbolinks
   masonry-rails (~> 0.2.4)
   paperclip (~> 5.1)
+  parallax-rails (~> 1.0)
   pg (= 0.17.1)
   rails (= 4.2.5)
   rails_12factor (= 0.0.2)
