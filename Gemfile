@@ -1,10 +1,18 @@
 source 'https://rubygems.org'
 
 
+gem 'bundler', '>= 1.8.4'
 gem 'rails', '4.2.5'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-angular'
+  gem 'rails-assets-leaflet'
+end
+
 gem 'jquery-rails'
 gem 'turbolinks'# Build JSON APIs
 gem 'jbuilder', '~> 2.0'

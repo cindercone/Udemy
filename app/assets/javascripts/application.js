@@ -10,10 +10,16 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+
+//= require parallax
+//= require jquery.parallax
 //= require jquery
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require bootstrap
 //= require masonry/jquery.masonry
+//= require bootstrap
+//= require angular
+//= require leaflet
 //= require_tree .
