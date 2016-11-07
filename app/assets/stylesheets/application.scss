@@ -50,3 +50,15 @@ div.social {
   }
 
 }
+
+.fadein {
+    opacity: 3;
+    -moz-transition: opacity 2.5s;
+    -webkit-transition: opacity 2.5s;
+    -o-transition: opacity 2.5s;
+    transition: opacity 2.5s;
+}
+
+body.loaded .fadein {
+    opacity: 1;
+}
