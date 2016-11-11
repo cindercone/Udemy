@@ -1,14 +1,229 @@
-<%= render 'home/jumbo' unless user_signed_in? %>
+<div id="about" class="panel-heading center">
+	<h1 class="fade firstFade">Hi!</h1><h1 class="fade secondFade">I'm Travis.</h1>
+	<p><br></p>
 
-<div class="panel panel-default">
-	<div class="panel-heading center"><h1>About this app</h1></div>
-	<div class="panel-body">
-		<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-		<span>Email</span><br />
-		<span>LinkedIn</span>
-
-	</div>
+	<img class="fade thirdFade headshot" src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/headshot1-tcm.jpg">
 </div>
 
+<div class="hero fade fourthFade">
+
+
+	<div id="myCarousel" class="carousel slide" data-interval="8000">
+    	<ol class="carousel-indicators">
+	        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	        <li data-target="#myCarousel" data-slide-to="1"></li>
+	        <li data-target="#myCarousel" data-slide-to="2"></li>
+	        <li data-target="#myCarousel" data-slide-to="3"></li>
+	        <li data-target="#myCarousel" data-slide-to="4"></li>
+ 		</ol>
+
+    	<div class="carousel-inner">
+        <div class="item active">
+        	<a href="http://estiloasertivo.blogspot.com.es/">
+        		<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/sisters.jpg" alt="">
+
+      			<div class="carousel-caption">
+            	<h4>Sisters, OR</h4>
+        			<p>This is where I grew up</p>
+        		</div>
+        	</a>
+      	</div>
+
+      	<div class="item">
+		      <a href="http://www.youtube.com/watch?v=Ehv0iriLTKE">
+        		<img src="http://www.andrewdorko.com/wp-content/uploads/2016/01/portland-oregon.jpg" alt="">
+
+         		<div class="carousel-caption">
+              <h4>Portland, OR</h4>
+              <p>This is where I went to college</p>
+        		</div>
+        	</a>
+    		</div>
+
+      	<div class="item">
+  		    <a href="http://www.youtube.com/watch?v=Ehv0iriLTKE">
+        		<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/three-sisters-moon.jpg" alt="">
+
+         		<div class="carousel-caption">
+              <h4>Second Thumbnail label</h4>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                  Donec id elit non mi porta gravida at eget metus. Nullam id dolor
+                  id nibh ultricies vehicula ut id elit.</p>
+        		</div>
+        	</a>
+    		</div>
+
+        <div class="item">
+        	<a href="http://www.google.cn/">
+          	<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/the-three-sisters.jpg"  alt="">
+
+            <div class="carousel-caption">
+              <h4>Third Thumbnail label</h4>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                  Donec id elit non mi porta gravida at eget metus. Nullam id dolor
+                  id nibh ultricies vehicula ut id elit.</p>
+          	</div>
+        	</a>
+     		</div>
+  	    <div class="item">
+        	<a href="http://www.google.cn/">
+          	<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/three-sisters.jpg"  alt="">
+
+            <div class="carousel-caption">
+              <h4>Third Thumbnail label</h4>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Donec id elit non mi porta gravida at eget metus. Nullam id dolor
+                id nibh ultricies vehicula ut id elit.</p>
+          	</div>
+          </a>
+        </div>
+ 	      <div class="item">
+          <a href="http://www.google.cn/">
+            <img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/three-sisters-sunset2.jpg"  alt="">
+
+            <div class="carousel-caption">
+              <h4>Third Thumbnail label</h4>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                Donec id elit non mi porta gravida at eget metus. Nullam id dolor
+                id nibh ultricies vehicula ut id elit.</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+  	  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+  	    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+  	    <span class="sr-only">Previous</span>
+  	  </a>
+  	  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+  	    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  	    <span class="sr-only">Next</span>
+  	  </a>
+	 </div>
+
+  <script>
+  	$('.carousel').carousel({
+  		interval: 8000
+  	})
+  </script>
+
+
+</div>
+
+
+
+	<!--<div class="panel-body fourthFade transitions-enabled">
+
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/group-in-sunset.jpg">
+		</div>
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/travis-and-cass-two.jpg">
+		</div>
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/trav-and-cass.jpg">
+		</div>
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/11214371_10204045630168463_5426263990164467020_n.jpg">
+		</div>
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/11707651_10153509531767049_1516147584613847230_n.jpg">
+		</div>
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/trav-on-beach.jpg">
+		</div>
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/trav-music.jpg">
+		</div>
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/trav-on-mtn.jpg">
+		</div>
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/trav-on-river.jpg">
+		</div>
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/10666084_10204812619944679_3836855330863930513_n.jpg">
+		</div>
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/12087103_10207864147310956_1041864724294097145_o.jpg">
+		</div>
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/12961265_10209265993276229_1852961766977888434_o.jpg">
+		</div>
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/13000101_10209265992796217_2511871595216459297_n.jpg">
+		</div>
+
+		<div class="masonryImage">
+			<img src="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/13254272_10209508996351154_7531432936820322813_n.jpg">
+		</div>-->
+
+
+
+	</div>
+
+		<div class="panel-body">
+
+			<div class="social">
+				<ul class="list-unstyled list-inline center">
+					<li><a href="mailto:myricktc@gmail.com" target="_blank"><i class="fi-mail"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/travis-myrick" target="_blank"><i class="fi-social-linkedin"></i></a></li>
+					<li><a href="https://github.com/myricktc" target="_blank"><i class="fi-social-github"></i></a></li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+
+<script  type="text/javascript">
+
+// Force scroll to the top of the page
+  $(window).on('beforeunload', function(){
+    $(window).scrollTop(0);
+  });
+
+
+
+	$(function () {
+	    $('.below').css({
+	        top : $(window).height()
+	    });
+	});
+
+// Delay loading of each element
+	$(".firstFade").delay(800).animate({"opacity": "1"}, 700);
+	$(".secondFade").delay(1800).animate({"opacity": "1"}, 700);
+	$(".thirdFade").delay(3100).animate({"opacity": "1"}, 300);
+	$(".hero").delay(5000).animate({"opacity": "1"}, 700);
+
+
+$(window).load(function () {
+    //normally you'd wait for document.ready, but you'd likely to want to wait
+    //for images to load in case they reflow the page
+    $('body').delay(5000) //wait 5 seconds
+        .animate({
+            //animate jQuery's custom "scrollTop" style
+            //grab the value as the offset of #second from the top of the page
+            'scrollTop': $('.hero').offset().top - 50
+        }, 1000); //animate over 300ms, change this to however long you want it to animate for
+});
+
+</script>
 
 
