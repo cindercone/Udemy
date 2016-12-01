@@ -29,7 +29,7 @@ header .navbar {
 
 div#main {
 	min-height: 100%;
-	padding-top: 75px;
+	padding-top: 15px;
 }
 
 div.social {
@@ -61,4 +61,9 @@ div.social {
 
 body.loaded .fadein {
     opacity: 1;
+}
+
+
+.callouts img {
+  padding: 20px 0;
 }
