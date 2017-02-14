@@ -1,6 +1,60 @@
-<%= render 'home/jumbo' unless user_signed_in? %>
+<!--<%= render 'home/jumbo' unless user_signed_in? %>-->
 
-<div id="pins" class="transitions-enabled">
+<div id="index" class="container-fluid">
+  <div class="row">
+    <p class="center">We want to provide beneficial information on Essential Oils in a simple way so that you, our students, have no other choice but to fall in love with Young Living, the products they offer and in turn become Oily Professors.</p>
+  </div>
+
+
+
+  <div class="row center callouts transitions-enabled">
+
+    <div class="col-md-4">
+      <img class="img-responsive" src="http://www.eouhealthyliving.com/uploads/1/9/1/9/19196245/922127.png" width="350px">
+    </div>
+
+    <div class="col-md-4">
+      <img class="img-responsive" src="http://www.eouhealthyliving.com/uploads/1/9/1/9/19196245/4517776.png" width="350px">
+    </div>
+
+    <div class="col-md-4">
+      <img class="img-responsive" src="http://www.eouhealthyliving.com/uploads/1/9/1/9/19196245/9202414.png" width="350px">
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-md-8">
+      <p>We use only Therapeutic Grade Young Living Essential Oils. We cannot vouch for any other Essential Oil companies and to be honest we wouldn't want to, this is how strongly we believe in this company! Young Living is the industry leader when it comes to oil safety, quality and purity and that is why you will only find mention of Young Living products on this site. Check out the Essential Oils 101 Pages for more information!</p>
+    </div>
+
+    <div class="col-md-4">
+      <img class="img-responsive" src="http://www.eouhealthyliving.com/uploads/1/9/1/9/19196245/8475853.jpg?383">
+    </div>
+
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-md-4">
+      <img class="img-responsive" src="http://www.eouhealthyliving.com/uploads/1/9/1/9/19196245/2032814.jpg?451">
+    </div>
+
+    <div class="col-md-8">
+      <p>As always, if under the care of a health professional, please be open and honest with them about your essential oil use and if pregnant or nursing check, with your doctor and do your research before beginning your oily journey. We recommend purchasing Gentle Babies by Debra Rayburn to assist in your research if you are pregnant, nursing or have children in the home. Some oils are not suitable for young children and this book will help you figure out the best ones to use on your babes.</p>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+
+<!--<div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
 
     <div class="box">
@@ -11,7 +65,7 @@
           <%= pin.user.name if pin.user %><br />
           <span class="small"><em><%= pin.created_at.strftime("%b %d %Y") %></em></span><br />
         </div>
-        
+
         <% if pin.user == current_user %>
           <div class="panel-footer">
             <%= link_to 'Edit', edit_pin_path(pin) %> |
@@ -20,8 +74,7 @@
         <% end %>
       </div>
     </div>
-  <% end %>
-</div>  
+  <% end %>-->
 
 <div class="center">
   <%= will_paginate @pins, renderer: BootstrapPagination::Rails %>

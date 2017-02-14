@@ -4,5 +4,8 @@ class HomeController < ApplicationController
 
   def about
   end
-  
+
+  def slideshow
+  end
+
 end

@@ -5,6 +5,9 @@ $navbar-default-brand-color: #cb2027;
 $jumbotron-bg: #fff;
 
 
+$body-bg: #e0eee0;
+$padding-base-vertical: 16px;
+
 $gray-base: #000;
 $gray-darker: lighten($gray-base, 13.5%);
 $gray-dark: lighten($gray-base, 20%);
@@ -14,6 +17,10 @@ $gray-lighter: lighten($gray-base, 63.5%);
 
 $font-size-base: 14px;
 $font-size-small: ceil(($font-size-base * 0.85));
+
+
+$font-size-base: 13px;
+
 
 
 @import "bootstrap-sprockets";
@@ -31,6 +38,9 @@ $font-size-small: ceil(($font-size-base * 0.85));
 	float: right;
 }
 
+/* Nav styles
+-------------------------------------------------- */
+
 .navbar-default .navbar-nav > li > a.btn-primary:hover {
 	background-color: #286090;
 }
@@ -40,18 +50,78 @@ $font-size-small: ceil(($font-size-base * 0.85));
 }
 
 .navbar-default .navbar-nav > li > a.navbar-btn {
-	color: #fff;
-	padding: 7px 15px;
+  color: #fff;
+  padding: 7px 15px;
 
 	&:hover {
-		color: #fff;
+    color: #fff;
 	}
 }
 
-.panel-footer {
-	min-height: 40px;
+.navbar-btn {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .small {
 	font-size: font-size-small;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  /* Margin bottom by footer height */
+  margin-bottom: 80px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row {
+  padding: $padding-base-vertical;
+}
+
+.container-full, .hero {
+  width:100%
+}
+
+.img-responsive {
+  margin: auto;
+}
+
+
+
+/* Center text on mobile
+-------------------------------------------------- */
+
+@media (max-width: $screen-md-min) {
+  p {
+    text-align: center;
+  }
 }
