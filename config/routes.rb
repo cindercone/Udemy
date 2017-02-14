@@ -1,4 +1,20 @@
 Rails.application.routes.draw do
+  get 'home/essential-oil-basics'
+
+  get 'home/resources-and-materials'
+
+  get 'home/safety'
+
+  get 'home/seed-to-seal'
+
+  get 'home/extra-credit'
+
+  get 'home/blog'
+
+  get 'home/team'
+
+  get 'home/contact'
+
   resources :pins
   devise_for :users
   root 'pins#index'
