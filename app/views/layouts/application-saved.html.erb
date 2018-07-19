@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My App</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=content-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" href="https://s3-us-west-2.amazonaws.com/pinteresting-tcm/app/about/grumpy-fav.jpg">
+</head>
+<body>
+
+<%= render 'home/header' %>
+
+<div id="main" class="container">
+
+<% flash.each do |name, msg| %>
+	<%= content_tag(:div, msg, class: "alert alert-info") %>
+<% end %>
+
+
+	<%= yield %>
+
+</div>
+
+<%= render 'home/footer' %>
+
+</body>
+</html>

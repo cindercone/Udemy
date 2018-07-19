@@ -8,4 +8,7 @@ class HomeController < ApplicationController
   def slideshow
   end
 
+  def zanoma_contact
+  end
+
 end
